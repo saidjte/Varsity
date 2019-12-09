@@ -8,7 +8,6 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
-
     <!-- Font awesome -->
     <link href="assets/css/font-awesome.css" rel="stylesheet">
     <!-- Bootstrap -->
@@ -22,9 +21,9 @@
     <link id="switcher" href="assets/css/theme-color/default-theme.css" rel="stylesheet">
 
     <!-- Main style sheet -->
-    <link href="assets/css/style.css" rel="stylesheet">    
+    <link href="assets/css/style.css" rel="stylesheet">   
+    <link rel="stylesheet" href="assets/css_boot/carousel-fade.css"> 
 
-   
     <!-- Google Fonts -->
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,400italic,300,300italic,500,700' rel='stylesheet' type='text/css'>
@@ -97,7 +96,7 @@
           </button>
           <!-- LOGO -->              
           <!-- TEXT BASED LOGO -->
-          <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i><span>Varsity</span></a>
+          <a class="navbar-brand" href="index.html"><i class="fa fa-graduation-cap"></i><span>Ecole d'intelligence</span></a>
           <!-- IMG BASED LOGO  -->
           <!-- <a class="navbar-brand" href="index.html"><img src="assets/img/logo.png" alt="logo"></a> -->
         </div>
@@ -186,22 +185,33 @@
                             <li>Encourager et développer l’éveil au goût chez les enfants.</li>
                           </ul>
                         </div>
-                        <div class="ism-slider" data-play_type="loop" id="my-slider">
-                            <ol>
-                              <li>
-                                <img src="assets/img/semaine_du_gout/DSC_0070.jpg">
-                              </li>
-                              <li>
-                                <img src="assets/img/semaine_du_gout/DSC_0096.jpg">
-                              </li>
-                              <li>
-                                <img src="assets/img/semaine_du_gout/DSC_0142.jpg">
-                              </li>
-                              <li>
-                                <img src="assets/img/semaine_du_gout/DSC_0158.jpg">
-                              </li>
-                            </ol>
+                          <!-- ========================================================== -->
+
+                          <div class="w3-content w3-section" style="max-width:100%">
+                            <img class="mySlides" src="assets/img/semaine_du_gout/DSC_0070.jpg" style="width:100%">
+                            <img class="mySlides" src="assets/img/semaine_du_gout/DSC_0096.jpg" style="width:100%">
+                            <img class="mySlides" src="assets/img/semaine_du_gout/DSC_0142.jpg" style="width:100%">
+                            <img class="mySlides" src="assets/img/semaine_du_gout/DSC_0158.jpg" style="width:100%">
                           </div>
+                          
+                          <script>
+                          var myIndex = 0;
+                          carousel();
+                          
+                          function carousel() {
+                            var i;
+                            var x = document.getElementsByClassName("mySlides");
+                            for (i = 0; i < x.length; i++) {
+                              x[i].style.display = "none";  
+                            }
+                            myIndex++;
+                            if (myIndex > x.length) {myIndex = 1}    
+                            x[myIndex-1].style.display = "block";  
+                            setTimeout(carousel, 2000); // Change image every 2 seconds
+                          }
+                          </script>
+                          
+                          <!-- ========================================================= -->
                       </div> 
                     </div>                                   
                   </div>
@@ -357,6 +367,5 @@
 
   <!-- Custom js -->
   <script src="assets/js/custom.js"></script> 
-
-  </body>
+    </body>
 </html>

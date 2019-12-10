@@ -2173,10 +2173,13 @@ img {
 @media (max-width: 767px) {
   .navbar-header {
     padding: 10px 0;
+    
   }
 
   #mu-menu .navbar-header .navbar-brand {
     padding-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
   }
 
   #mu-search-icon {
@@ -2511,5 +2514,6 @@ ul.objectifs {
   }
   .telechargement {
     text-align: center;
+    width: 100%;
 }
 }

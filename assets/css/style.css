@@ -2509,4 +2509,7 @@ ul.objectifs {
   .app-suivie {
     flex-direction: column;
   }
+  .telechargement {
+    text-align: center;
+}
 }

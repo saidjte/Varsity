@@ -2501,7 +2501,12 @@ ul.objectifs {
   margin-left: 5%;
 }
 /** ========================= App ============================== */
-app-suivie > table {
-  width: 100%;
-  margin: auto;
+.app-suivie {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 640px) {
+  .app-suivie {
+    flex-direction: column;
+  }
 }

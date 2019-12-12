@@ -2523,3 +2523,16 @@ ul.objectifs {
     width: 100%;
 }
 }
+.mu-footer-widget li {
+  color: white;
+  font-size: 14px;
+    font-weight: normal;
+    padding: 5px 0 5px 15px;
+    position: relative;
+    text-transform: capitalize;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
